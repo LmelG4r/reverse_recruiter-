@@ -1,0 +1,20 @@
+{
+  "geography": {
+    "cdmx": ["Azcapotzalco", "Miguel Hidalgo", "Cuauhtémoc", "Gustavo A. Madero"],
+    "edomex": ["Nicolas Romero", "Atizapan", "Tlalnepantla", "Naucalpan"],
+    "remote": true
+  },
+  "skills": {
+    "data_and_tech": ["Python", "Pandas", "NumPy", "PostgreSQL", "Power BI", "SQL"],
+    "visual_production": ["Fotografía de producto", "Producción visual", "Cámaras reflex", "Edición"]
+  },
+  "roles": {
+    "target": ["Data Analyst", "BI Analyst", "Analista de Datos", "E-commerce", "Fotógrafo de Producto"],
+    "red_flags": ["call center", "ventas en frío", "comisiones", "multinivel", "sin experiencia", "esquema mixto", "100% comisiones"]
+  },
+  "evaluation_weights": {
+    "skill_match": 0.50,
+    "location_match": 0.30,
+    "role_alignment": 0.20
+  }
+}

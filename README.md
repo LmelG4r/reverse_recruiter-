@@ -41,7 +41,7 @@ El pipeline opera bajo un modelo ETL (Extract, Transform, Load) enriquecido con 
 
 1. **Clonar repositorio e inicializar entorno:**
    ```bash
-   git clone <tu-url-del-repositorio>
+   git clone https://github.com/LmelG4r/reverse_recruiter-
    cd reverse_recruiter_pipeline
    python -m venv venv
    source venv/bin/activate  # Windows: .\venv\Scripts\activate

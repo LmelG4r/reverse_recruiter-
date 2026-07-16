@@ -1,0 +1,37 @@
+name: Reverse Recruiter Pipeline
+
+on:
+  schedule:
+    - cron: '0 14 * * *' # 8:00 AM CDMX
+    - cron: '0 23 * * *' # 5:00 PM CDMX
+  workflow_dispatch:      # Permite ejecución manual desde GitHub
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Orchestrator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python src/orquestador.py
+
+      - name: Commit and push report
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add reporte_diario.md
+          git commit -m "Automated update: Job Report" || echo "No changes to commit"
+          git push

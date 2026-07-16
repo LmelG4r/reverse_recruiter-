@@ -56,4 +56,4 @@ Ajustar el diccionario de habilidades y geografía en config/config.json.
 ## Ejecución manual:
 
 Bash
-python src/orquestador.py
+python -m src.orquestador

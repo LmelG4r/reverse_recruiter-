@@ -9,7 +9,7 @@
     "visual_production": ["Fotografía de producto", "Producción visual", "Cámaras reflex", "Edición"]
   },
   "roles": {
-    "target": ["Data Analyst", "BI Analyst", "Analista de Datos", "E-commerce", "Fotógrafo de Producto"],
+    "target": ["Data Analyst", "BI Analyst", "Analista de Datos", "E-commerce", "Fotógrafo de Producto", "Ecommerce", "Analista de datos Jr", "Auxiliar de base de datos", "Especialista Power BI", "Analista de Reportes", "Capturista SQL", "Analista de catálogo"],
     "red_flags": ["call center", "ventas en frío", "comisiones", "multinivel", "sin experiencia", "esquema mixto", "100% comisiones"]
   },
   "evaluation_weights": {
@@ -18,3 +18,4 @@
     "role_alignment": 0.20
   }
 }
+

@@ -1,24 +1,35 @@
+import os
 import pandas as pd
 from datetime import datetime
 from src.ingestion.consolidator import ingest_all_sources
 from src.evaluation.llm_evaluator import evaluate_job_semantics
 
+# Ruta para el ledger de memoria de vacantes
+HISTORY_FILE = "config/vistas.txt"
+
+def load_seen_urls() -> set:
+    if os.path.exists(HISTORY_FILE):
+        with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
+            return set(f.read().splitlines())
+    return set()
+
+def save_seen_urls(urls: list):
+    with open(HISTORY_FILE, 'a', encoding='utf-8') as f:
+        for url in urls:
+            f.write(f"{url}\n")
+
 def generate_markdown_report(df_top: pd.DataFrame, file_path: str = "reporte_diario.md"):
-    """
-    Toma el DataFrame filtrado y genera un reporte Markdown altamente escaneable.
-    """
     fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     md_content = f"# 🚀 Reporte de Reclutamiento Inverso\n"
     md_content += f"**Última actualización:** {fecha_actual}\n\n"
     
     if df_top.empty:
-        md_content += "### ⚠️ Cero hallazgos\n"
-        md_content += "No se encontraron vacantes viables libres de banderas rojas en esta ejecución.\n"
+        md_content += "### ⚠️ Sin nuevas coincidencias\n"
+        md_content += "No se encontraron vacantes nuevas viables o libres de banderas rojas en esta ejecución.\n"
     else:
         md_content += "---\n\n"
         for index, row in df_top.iterrows():
-            # Extraer variables manejando posibles nulos estructurales
             score = row.get('match_score', 0)
             title = row.get('title', 'Sin título')
             company = row.get('company', 'Confidencial')
@@ -34,7 +45,7 @@ def generate_markdown_report(df_top: pd.DataFrame, file_path: str = "reporte_dia
             md_content += f"- **🎯 Justificación:** {justification}\n"
             md_content += f"- **✅ Skills Match:** {matched}\n"
             md_content += f"- **❌ Skills Faltantes:** {missing}\n"
-            md_content += f"- **🔗 Enlace:** [Aplicar a la vacante]({url})\n\n"
+            md_content += f"- **🔗 Enlace:** [{url}]({url})\n\n"
             md_content += "---\n"
             
     with open(file_path, 'w', encoding='utf-8') as f:
@@ -43,9 +54,6 @@ def generate_markdown_report(df_top: pd.DataFrame, file_path: str = "reporte_dia
     print(f"Reporte generado exitosamente en: {file_path}")
 
 def run_pipeline():
-    """
-    Ejecución principal: Ingesta -> Evaluación -> Filtrado -> Reporte.
-    """
     print("=== INICIANDO PIPELINE DE RECLUTAMIENTO INVERSO ===")
     
     # 1. Ingesta
@@ -55,32 +63,39 @@ def run_pipeline():
         generate_markdown_report(pd.DataFrame())
         return
 
-    print(f"Iniciando evaluación semántica para {len(df_jobs)} vacantes...")
+    # 2. Filtrado de Estado (Memoria)
+    seen_urls = load_seen_urls()
+    df_nuevas = df_jobs[~df_jobs['url'].isin(seen_urls)].copy()
     
-    # 2. Evaluación
+    print(f"Vacantes extraídas: {len(df_jobs)} | Ya vistas: {len(df_jobs) - len(df_nuevas)} | Nuevas a evaluar: {len(df_nuevas)}")
+    
+    if df_nuevas.empty:
+        generate_markdown_report(pd.DataFrame())
+        return
+
+    # 3. Evaluación
+    print(f"Iniciando evaluación semántica para {len(df_nuevas)} vacantes nuevas...")
     resultados = []
-    for index, row in df_jobs.iterrows():
-        print(f"Evaluando [{index + 1}/{len(df_jobs)}]: {row['title']}...")
+    
+    for index, row in df_nuevas.iterrows():
         evaluacion = evaluate_job_semantics(row['description'])
-        
-        # Fusionar datos originales con la evaluación del LLM
         row_data = row.to_dict()
         row_data.update(evaluacion)
         resultados.append(row_data)
         
     df_evaluado = pd.DataFrame(resultados)
     
-    # 3. Filtrado y Ordenamiento
-    # Descartar filas donde el LLM detectó una bandera roja (red_flags_detected no es None)
+    # Registrar las nuevas URLs en el historial
+    save_seen_urls(df_nuevas['url'].tolist())
+    
+    # 4. Filtrado y Ordenamiento
     df_limpio = df_evaluado[df_evaluado['red_flags_detected'].isnull()]
+    print(f"Descartadas por banderas rojas: {len(df_evaluado) - len(df_limpio)}")
     
-    print(f"Filtro aplicado: {len(df_evaluado) - len(df_limpio)} vacantes descartadas por banderas rojas.")
-    
-    # Ordenar por score descendente y tomar el Top 10
     df_limpio = df_limpio.sort_values(by='match_score', ascending=False)
     df_top10 = df_limpio.head(10)
     
-    # 4. Generación de Reporte
+    # 5. Reporte
     generate_markdown_report(df_top10)
     print("=== PIPELINE COMPLETADO ===")
 

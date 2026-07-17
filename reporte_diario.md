@@ -1,5 +1,5 @@
 # 🚀 Reporte de Reclutamiento Inverso
-**Última actualización:** 2026-07-17 15:20:24
+**Última actualización:** 2026-07-17 23:58:38
 
 ### ⚠️ Sin nuevas coincidencias
 No se encontraron vacantes nuevas viables o libres de banderas rojas en esta ejecución.

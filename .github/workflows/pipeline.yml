@@ -32,6 +32,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add reporte_diario.md
-          git commit -m "Automated update: Job Report" || echo "No changes to commit"
+          git add -f reporte_diario.md
+          git add config/vistas.txt
+          git commit -m "Automated update: Job Report and Ledger" || echo "No changes to commit"
           git push

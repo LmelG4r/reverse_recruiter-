@@ -26,7 +26,7 @@ jobs:
       - name: Run Orchestrator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python src/orquestador.py
+        run: python -m src.orquestador
 
       - name: Commit and push report
         run: |

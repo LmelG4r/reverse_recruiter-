@@ -1,13 +1,13 @@
 # 🚀 Reporte de Reclutamiento Inverso
-**Última actualización:** 2026-08-11 15:05:50
+**Última actualización:** 2026-08-11 23:51:42
 
 ---
 
-## [30%] Analista de datos comerciales Jr @ Confidencial
+## [85%] Analista de datos @ Confidencial
 - **📍 Ubicación:** CDMX / EdoMex | **📡 Fuente:** occ_mundial
-- **🎯 Justificación:** El texto proporcionado es un listado de resultados de búsqueda de una plataforma de empleo (OCC) y no contiene la descripción detallada ni los requisitos técnicos de ninguna de las vacantes mencionadas (como 'Analista de datos comerciales Jr'). Por lo tanto, no es posible extraer habilidades requeridas para realizar un emparejamiento directo, aunque el perfil del candidato se alinea temáticamente con uno de los títulos mostrados.
-- **✅ Skills Match:** Ninguna
+- **🎯 Justificación:** El perfil del candidato se alinea con la vacante de 'Analista de datos' listada en los resultados de búsqueda. Cuenta con habilidades sólidas en herramientas clave de análisis como Python, SQL y Power BI. Dado que el texto proporcionado es un listado general de empleos y no detalla los requisitos específicos del puesto, no se pueden identificar habilidades técnicas faltantes ni banderas rojas directas para esa posición.
+- **✅ Skills Match:** Python, SQL, Power BI
 - **❌ Skills Faltantes:** Ninguna
-- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-GRUPO-DINAMEX/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-GRUPO-DINAMEX/)
+- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-OPERADORA-DE-HOSPITALES-ANGELES-SA--DE-CV-/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-OPERADORA-DE-HOSPITALES-ANGELES-SA--DE-CV-/)
 
 ---

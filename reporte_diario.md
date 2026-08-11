@@ -1,13 +1,13 @@
 # 🚀 Reporte de Reclutamiento Inverso
-**Última actualización:** 2026-08-10 23:42:36
+**Última actualización:** 2026-08-11 15:05:50
 
 ---
 
-## [85%] ANALISTA DE DATOS JR @ Confidencial
+## [30%] Analista de datos comerciales Jr @ Confidencial
 - **📍 Ubicación:** CDMX / EdoMex | **📡 Fuente:** occ_mundial
-- **🎯 Justificación:** El candidato cuenta con el perfil ideal de habilidades de datos para la vacante de 'ANALISTA DE DATOS JR' identificada en la bolsa de trabajo. Aunque el texto proporcionado corresponde a un listado general de búsqueda y carece de la descripción detallada de funciones, el stack técnico del candidato se alinea perfectamente con el estándar para dicho rol. No se identificaron banderas rojas aplicables a esta posición.
-- **✅ Skills Match:** Python, Pandas, NumPy, PostgreSQL, Power BI, SQL
+- **🎯 Justificación:** El texto proporcionado es un listado de resultados de búsqueda de una plataforma de empleo (OCC) y no contiene la descripción detallada ni los requisitos técnicos de ninguna de las vacantes mencionadas (como 'Analista de datos comerciales Jr'). Por lo tanto, no es posible extraer habilidades requeridas para realizar un emparejamiento directo, aunque el perfil del candidato se alinea temáticamente con uno de los títulos mostrados.
+- **✅ Skills Match:** Ninguna
 - **❌ Skills Faltantes:** Ninguna
-- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-BANKAOOL-SA-INSTITUCION-DE-BANCA-MULTIPLE/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-BANKAOOL-SA-INSTITUCION-DE-BANCA-MULTIPLE/)
+- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-GRUPO-DINAMEX/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-GRUPO-DINAMEX/)
 
 ---

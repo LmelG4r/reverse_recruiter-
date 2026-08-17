@@ -1,13 +1,13 @@
 # 🚀 Reporte de Reclutamiento Inverso
-**Última actualización:** 2026-08-17 14:35:03
+**Última actualización:** 2026-08-17 23:30:19
 
 ---
 
-## [85%] Analista de datos e Información operativa- Power Bi @ Confidencial
+## [70%] Analista de datos Sr @ Confidencial
 - **📍 Ubicación:** CDMX / EdoMex | **📡 Fuente:** occ_mundial
-- **🎯 Justificación:** El candidato tiene un perfil altamente compatible con la vacante de 'Analista de datos e Información operativa- Power Bi' gracias a su dominio en Power BI, SQL y Python. No se detectan banderas rojas como esquemas de comisiones o call center para esta posición específica.
-- **✅ Skills Match:** Power BI, SQL, Python, PostgreSQL
-- **❌ Skills Faltantes:** Ninguna
-- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-CS-SERVICIOS-OPERATIVOS/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-CS-SERVICIOS-OPERATIVOS/)
+- **🎯 Justificación:** El texto proporcionado es un listado de múltiples vacantes de TI. El perfil del candidato tiene una alta afinidad potencial con los puestos de 'Analista de datos Sr' y 'PL/SQL' debido a su fuerte trasfondo en bases de datos y análisis de datos, aunque el listado no detalla los requisitos específicos de cada puesto y menciona otros roles para los cuales no está calificado (Java, Oracle DBA, Svelte).
+- **✅ Skills Match:** SQL
+- **❌ Skills Faltantes:** Oracle, PL/SQL, Java, Svelte
+- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-Quality---Knowledge-on-IT-Services--S-A-de-C-V/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-Quality---Knowledge-on-IT-Services--S-A-de-C-V/)
 
 ---

@@ -1,13 +1,13 @@
 # 🚀 Reporte de Reclutamiento Inverso
-**Última actualización:** 2026-08-16 23:28:05
+**Última actualización:** 2026-08-17 14:35:03
 
 ---
 
-## [20%] ANALISTA DE DATOS MKT DIGITAL @ Confidencial
+## [85%] Analista de datos e Información operativa- Power Bi @ Confidencial
 - **📍 Ubicación:** CDMX / EdoMex | **📡 Fuente:** occ_mundial
-- **🎯 Justificación:** El texto proporcionado no corresponde a una descripción de vacante individual, sino a una lista de resultados de búsqueda en un portal de empleo. Se identifica un puesto de 'Analista de Datos MKT Digital' que conceptualmente podría alinearse con el perfil del candidato, pero la falta de detalles sobre requisitos técnicos y funciones impide realizar un emparejamiento efectivo de habilidades.
-- **✅ Skills Match:** Ninguna
+- **🎯 Justificación:** El candidato tiene un perfil altamente compatible con la vacante de 'Analista de datos e Información operativa- Power Bi' gracias a su dominio en Power BI, SQL y Python. No se detectan banderas rojas como esquemas de comisiones o call center para esta posición específica.
+- **✅ Skills Match:** Power BI, SQL, Python, PostgreSQL
 - **❌ Skills Faltantes:** Ninguna
-- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-GEPP/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-GEPP/)
+- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-CS-SERVICIOS-OPERATIVOS/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-CS-SERVICIOS-OPERATIVOS/)
 
 ---

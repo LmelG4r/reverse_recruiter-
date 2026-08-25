@@ -1,13 +1,13 @@
 # 🚀 Reporte de Reclutamiento Inverso
-**Última actualización:** 2026-08-24 23:29:09
+**Última actualización:** 2026-08-25 14:53:50
 
 ---
 
-## [80%] ANALISTA DE DATOS @ Confidencial
+## [90%] Analista de Datos y Automatización @ Confidencial
 - **📍 Ubicación:** CDMX / EdoMex | **📡 Fuente:** occ_mundial
-- **🎯 Justificación:** El texto proporcionado corresponde a un listado de resultados de búsqueda de empleo y no a una descripción detallada de un solo puesto. Sin embargo, se identifican las vacantes de 'ANALISTA DE DATOS' y 'ANALISTA DE INFORMACIÓN', las cuales son altamente compatibles con el perfil técnico del candidato (Python, SQL, Power BI). No es posible extraer habilidades requeridas específicas ni se detectan banderas rojas directas para estos roles de datos en la información disponible.
-- **✅ Skills Match:** Ninguna
+- **🎯 Justificación:** El perfil del candidato es un excelente fit para la vacante de 'Analista de Datos y Automatización' que figura en los resultados de búsqueda. Su stack técnico en análisis de datos y bases de datos (Python, SQL, Power BI, Pandas, NumPy) es ideal para este rol. Aunque los términos 'call center' y 'ventas' aparecen en el texto, corresponden a los filtros laterales de la bolsa de trabajo (OCC) y no a la vacante de analista en sí, por lo que se descartan como banderas rojas.
+- **✅ Skills Match:** Python, Pandas, NumPy, PostgreSQL, Power BI, SQL
 - **❌ Skills Faltantes:** Ninguna
-- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-MARKETING---PROMOTION/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-MARKETING---PROMOTION/)
+- **🔗 Enlace:** [https://www.occ.com.mx/empleos/bolsa-de-trabajo-Capgemini-Mexico/](https://www.occ.com.mx/empleos/bolsa-de-trabajo-Capgemini-Mexico/)
 
 ---
